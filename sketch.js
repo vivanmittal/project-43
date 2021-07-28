@@ -22,24 +22,12 @@ function draw() {
   background(bg);
   clues();
   security.display();
-  textSize(20);
-  text("REVBAILA",100,50)
-  fill("white");
-  text("Score: " + score, 450, 50);
+  
 // add code for changing the background to the treasure background
-if(score===3){
-  background("aladdin_cave2.jpg")
-}
-security.display();
-textSize(20);
-text("ATADABASE",100,50)
-fill("white");
-text("Score: " + score, 450, 50);
+
 
 textSize(20);
-  text("CUTNIFON",100,50)
-  fill("white");
-  text("Score: " + score, 450, 50);
+text("Score: " + score, 450, 250);
 
   if(score === 3) {
     clear()
