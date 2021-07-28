@@ -6,7 +6,7 @@ function preload() {
   
   bg= loadImage("aladdin_cave.jpg")
   //load image for the treasure background
-  
+  bg2=loadImage("aladdin_cave2.jpg")
 }
 
 function setup() {
@@ -23,10 +23,23 @@ function draw() {
   clues();
   security.display();
   textSize(20);
+  text("REVBAILA",100,50)
   fill("white");
   text("Score: " + score, 450, 50);
 // add code for changing the background to the treasure background
-  
+if(score===3){
+  background("aladdin_cave2.jpg")
+}
+security.display();
+textSize(20);
+text("ATADABASE",100,50)
+fill("white");
+text("Score: " + score, 450, 50);
+
+textSize(20);
+  text("CUTNIFON",100,50)
+  fill("white");
+  text("Score: " + score, 450, 50);
 
   if(score === 3) {
     clear()

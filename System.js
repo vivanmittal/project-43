@@ -7,6 +7,10 @@ class System{
         fill("black");
         text(code,300,300)
         //add code to return true if correct answer entered.
+if(
+    actualcode===enteredCode.toUpperCase()){
+return true
+    }else{return false}
 
         
     }
